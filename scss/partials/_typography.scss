@@ -1,0 +1,29 @@
+body{
+    font-family: $font-2;
+    letter-spacing: .08em;
+}
+
+h1{
+    font-family: $font-1;
+    font-size: 2.75rem;
+    color: $bg-2;
+    padding: rem(15) 0;
+}
+
+h3{
+    font-size: 1.25rem;
+    margin: 3.5% auto 3% auto;
+}
+p{
+    font-size: .85rem;
+}
+
+a{
+    font-size: .8rem;
+}
+
+footer{
+    font-size: .6rem;
+    text-align: center;
+    color: $bg-1;
+}

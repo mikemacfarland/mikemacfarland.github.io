@@ -1,0 +1,14 @@
+* {
+    display: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: -webkit-linear-gradient(-80deg, $bg-1 50%, $bg-2 50.25%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

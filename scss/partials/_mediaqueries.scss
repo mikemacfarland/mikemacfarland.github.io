@@ -1,0 +1,172 @@
+@media (min-width:480px) {
+    a{
+        font-size: 1.25rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    h3{
+        font-size: 1.3rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    a{
+        width: 40%;
+    }
+    
+}
+
+@media (min-width:600px){
+    header{
+        margin-top: 5%; 
+    }
+
+    a{
+        font-size: 1.5rem;
+    }
+
+    body{
+        background-image: -webkit-linear-gradient(-80deg, $bg-1 50%, $bg-2 50.25%);
+    }
+
+    h1{
+        font-size: 4.4rem;
+    }
+
+    h3{
+        font-size: 1.75rem;
+    }
+    
+    p{
+        font-size: 1.3rem;
+    }
+    
+    a{
+        width: 25%;
+    }
+
+    footer{
+        font-size: .85rem;
+    }
+}
+
+
+// @media (min-width:768px){
+
+//     body{
+//         background-image: -webkit-linear-gradient(-57.5deg, $bg-1 56%, $bg-2 56.25%);
+//         background-repeat: no-repeat;
+//     }
+    
+//     h1{
+//         font-size: 5.5rem;
+//     }
+
+//     h3{
+//         font-size: 1.7rem;
+//     }
+    
+//     p{
+//         font-size: 1.35rem;
+//     }
+
+//     footer{
+//         font-size: .85rem;
+//     }
+// }
+
+// @media (min-width:960px){
+
+//     h1{
+//     margin-top: rem(85);
+//     font-size: 3.5rem;
+//     }
+
+//     h3{
+//         font-size: 1.5rem;
+//     }
+
+//     p{
+//         font-size: 1.125rem;
+//     }
+    
+//     body{
+//     }
+
+//     ul{
+//         display:flex;
+//         margin: 0 2.5%;
+//     }
+
+//     li{
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+
+//     main{
+//         bottom: 0;
+//         display: flex;
+//         margin: 0 2.5%;
+//     }
+
+//     .container-1{
+//         margin-left: 2.5%;
+//         margin-right: 4%
+//     }
+
+//     .container-2{
+//         margin-left: 4%
+//     }
+
+//     .container-1,
+//     .container-2{
+//         width: 45%;
+//     }
+
+//     footer{
+//         left:52.5%;
+//     }
+
+// }
+
+
+// @media (min-width:1024px){
+//     h1{
+//         margin-top: rem(65);
+//         font-size: 3.75rem;
+//     }
+
+//     h3{
+//         font-size: 1.5rem;
+//     }
+
+//     p{
+//         font-size: 1.125rem;
+//     }
+
+// }
+
+// @media (min-width:1260px){
+//     h1{
+//         margin-top: rem(80);
+//         font-size: 4.5rem;
+//     }
+
+//     h3{
+//         font-size: 1.75rem;
+//     }
+
+//     p{
+//         font-size: 1.25rem;
+//     }
+
+//     footer{
+//         left: 57.5%;
+//     }
+
+// }

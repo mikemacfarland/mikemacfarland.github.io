@@ -1,0 +1,23 @@
+$font-1: 'Big Shoulders Inline Display', cursive;
+$font-2: 'Julius Sans One', sans-serif;
+
+$black: black;
+$bg-1: #bdbdbd;
+$bg-2: #0587b3ea;
+$bg-3: #0f5348;
+
+$tran-1: .8s;
+
+
+// from css tricks - this function named "em" uses two variables ($pixels and $context) ($context is set by $browser-context value using :)
+//  the result is returned using @return # with the equation of {$pixels/$context}
+$browser-context: 16; //default
+@function rem($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}rem;
+}
+
+// // this function could possibly allow for scaling of text across screen sizes in the future.
+// $font-size: 1; //default
+// @function font-size($rem,$multiplier: $font-size){
+//     @return #{$rem*$multiplier}rem;
+// }

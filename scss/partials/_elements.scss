@@ -1,0 +1,60 @@
+.flex{
+    display:flex;
+}
+
+header{
+    margin: rem(20) auto rem(5) auto;
+    width: 92.5%;
+}
+
+ul{
+    flex-direction: column;
+    list-style-type: none;
+}
+
+li{
+    font-weight: bold;
+    margin-bottom: rem(5);
+    padding: rem(10) 0;
+    background-color: #dfdfdf;
+    width: 100%;
+    margin: 0 auto rem(10) auto;
+    cursor: pointer;
+    border-radius: rem(3.75);
+    &:hover{
+        color: white;
+        background-color: $bg-2;
+        transition: .5s;
+    }
+    &:not(:hover){
+        transition: .75s;
+    }
+}
+
+.portfolio,
+.contact{
+    display: none;
+}
+
+.container{
+    flex-direction: column;
+    width: 92.5%;
+    margin: rem(10) auto 0 auto;
+    background-color: #dfdfdf;
+    border-radius: rem(4);
+}
+
+.intro{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.profile-pic{
+    width:100%;
+}
+
+footer{
+    text-align: center;
+    margin: rem(5) auto;
+    width: 50%;
+}
