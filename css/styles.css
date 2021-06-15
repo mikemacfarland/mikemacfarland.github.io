@@ -79,6 +79,10 @@ nav li:not(:hover) {
   display: none;
 }
 
+.portfolio {
+  padding-bottom: 2rem;
+}
+
 .portfolio ul {
   width: 85%;
   margin: 0.3125rem 5% 0 10%;
@@ -93,6 +97,7 @@ nav li:not(:hover) {
 
 .projectCard {
   margin: 0.625rem 0;
+  flex-direction: column;
 }
 
 .projectLink {
@@ -243,6 +248,7 @@ footer {
 
   .projectCard {
     width: 50%;
+    justify-content: flex-end;
   }
 }
 @media (min-width: 1024px) {

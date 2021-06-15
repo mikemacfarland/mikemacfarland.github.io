@@ -43,6 +43,10 @@ nav li{
     display: none;
 }
 
+.portfolio{
+    padding-bottom: rem(32);
+}
+
 .portfolio ul{
     width: 85%;
     margin: rem(5) 5% 0 10%;
@@ -57,6 +61,7 @@ nav li{
 
 .projectCard{
     margin: rem(10) 0;
+    flex-direction: column;
 }
 
 .projectLink{
