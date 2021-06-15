@@ -26,6 +26,7 @@ h1 {
 }
 
 h3 {
+  width: 95%;
   font-size: 1.25rem;
   margin: 3.5% auto 3% auto;
 }
@@ -48,6 +49,14 @@ footer {
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
 header {
   margin: 1.25rem auto 0.3125rem auto;
   width: 92.5%;
@@ -58,7 +67,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+nav li {
   font-weight: bold;
   margin-bottom: 0.3125rem;
   padding: 0.625rem 0;
@@ -68,18 +77,86 @@ li {
   cursor: pointer;
   border-radius: 0.234375rem;
 }
-li:hover {
+nav li:hover {
   color: white;
   background-color: #0587b3ea;
   transition: 0.5s;
 }
-li:not(:hover) {
+nav li:not(:hover) {
   transition: 0.75s;
 }
 
 .portfolio,
 .contact {
   display: none;
+}
+
+.portfolio {
+  padding-bottom: 0.9375rem;
+}
+
+.portfolio ul {
+  width: 85%;
+  margin: 0.3125rem 5% 0 10%;
+  font-size: 0.75rem;
+  list-style-type: circle;
+  font-weight: bold;
+}
+.portfolio ul li {
+  text-align: left;
+  margin-bottom: 0.3125rem;
+}
+
+.projectCard {
+  margin-top: 1.5625rem;
+}
+
+.projectLink {
+  width: 90%;
+  margin: 0 auto 0.234375rem auto;
+}
+.projectLink img {
+  max-width: 95%;
+  border-radius: 0.3125rem;
+}
+.projectLink img:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.projectLink img:not(:hover) {
+  transition: 0.5s;
+}
+
+.contact ul {
+  flex-direction: row;
+  margin: 0.625rem 27.5%;
+  justify-content: space-between;
+}
+
+.email {
+  margin-top: 0.3125rem;
+  text-decoration: none;
+  color: black;
+}
+.email:hover {
+  color: #0587b3ea;
+  transition: 0.5s;
+}
+.email:not(:hover) {
+  transition: 0.75s;
+}
+
+.contact div {
+  justify-content: center;
+}
+
+.social {
+  width: 3.125rem;
+  cursor: pointer;
+  margin: 0.3125rem 0.625rem;
+}
+.social:hover {
+  fill: #bdbdbd;
 }
 
 .container {
@@ -103,61 +180,6 @@ footer {
   text-align: center;
   margin: 0.3125rem auto;
   width: 50%;
-}
-
-@media (min-width: 480px) {
-  a {
-    font-size: 1.25rem;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  a {
-    width: 40%;
-  }
-}
-@media (min-width: 600px) {
-  header {
-    margin-top: 5%;
-  }
-
-  a {
-    font-size: 1.5rem;
-  }
-
-  body {
-    background-image: -webkit-linear-gradient(-80deg, #bdbdbd 50%, #0587b3ea 50.25%);
-  }
-
-  h1 {
-    font-size: 4.4rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-  }
-
-  p {
-    font-size: 1.3rem;
-  }
-
-  a {
-    width: 25%;
-  }
-
-  footer {
-    font-size: 0.85rem;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
