@@ -1,28 +1,83 @@
 @media (min-width:480px) {
 
-}
+    nav li{
+        font-size: 1.25rem;
+    }
 
-@media (min-width:600px){
+    .portfolio ul{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    }
     
+    .containerInfo p,
+    .containerInfo a{
+        font-size: 1.2rem;
+    }
+    .social{
+        width:rem(65);
+    }
 }
-
 
 @media (min-width:768px){
 
+    nav ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav li{
+        width: 32%;
+
+    }
+
+    .home,
+    .contact{
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    .containerInfo{
+        width:50%;
+        margin: 10% auto;
+    }
+
+    .profile-pic{
+        width: 45%;
+    }
+    .portfolio{
+        padding-top: 5%;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        & :first-of-type.projectCard{
+            width:75%;
+        }
+        & h1{
+            width:100%;
+        }
+    }
+    .projectCard{
+        width:50%;
+    }
+
 }
-
-// @media (min-width:960px){
-
-
-// }
-
 
 @media (min-width:1024px){
-  
+    h1{
+        font-size: 4rem;
+    }
+
+    h3{
+        font-size: 1.95rem;
+    }
+
+    .containerInfo p,
+    .containerInfo a{
+        font-size: 1.3rem;
+    }
+
 
 }
-
-// @media (min-width:1260px){
-  
-
-// }

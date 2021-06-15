@@ -5,23 +5,20 @@ body{
 
 h1{
     font-family: $font-1;
-    font-size: 2.75rem;
+    font-size: 3rem;
     color: $bg-2;
     padding: rem(15) 0;
 }
 
 h3{
     width: 95%;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     margin: 3.5% auto 3% auto;
 }
 
-p{
-    font-size: .85rem;
-}
-
+p,
 a{
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 footer{

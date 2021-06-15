@@ -35,8 +35,6 @@ document.addEventListener('click', (e) => {
     }
 })
 
-
-
 // -----------------
 // FUNCTIONS
 // -----------------

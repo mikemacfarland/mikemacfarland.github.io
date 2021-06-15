@@ -1,12 +1,6 @@
 .flex{
     display:flex;
 }
-.column{
-    flex-direction: column;
-}
-.row{
-    flex-direction: row;
-}
 
 // -----------------
 // HEADER, NAV
@@ -24,11 +18,10 @@ ul{
 
 nav li{
     font-weight: bold;
-    margin-bottom: rem(5);
     padding: rem(10) 0;
     background-color: #dfdfdf;
     width: 100%;
-    margin: 0 auto rem(10) auto;
+    margin: rem(10) 0;
     cursor: pointer;
     border-radius: rem(3.75);
     &:hover{
@@ -50,12 +43,7 @@ nav li{
     display: none;
 }
 
-.portfolio{
-    padding-bottom: rem(15);
-}
-
 .portfolio ul{
-    // border: red 1px solid;
     width: 85%;
     margin: rem(5) 5% 0 10%;
     font-size: .75rem;
@@ -68,7 +56,7 @@ nav li{
 }
 
 .projectCard{
-    margin-top: rem(25);
+    margin: rem(10) 0;
 }
 
 .projectLink{
@@ -92,14 +80,7 @@ nav li{
 // CONTACT TAB
 // -----------------
 
-.contact ul{
-    flex-direction: row;
-    margin: rem(10) 27.5%;
-    justify-content: space-between;
-}
-
 .email{
-    margin-top: rem(5);
     text-decoration: none;
     color: black;
     &:hover{
@@ -111,16 +92,42 @@ nav li{
     }
 }
 
-.contact div{
+.contact{
+    font-weight: bold;
+}
+
+.containerInfo{
+    font-weight: bold;
     justify-content: center;
+    & a,p{
+        margin: rem(10) rem(10);
+    }
+    & div{
+        justify-content: center;
+    }
+}
+
+.outerCircle{
+    fill: $bg-2;
+}
+
+.logoFill{
+    fill: $bg-3;
 }
 
 .social{
     width: rem(50);
     cursor: pointer;
-    margin: rem(5) rem(10);
     &:hover{
-        fill: $bg-1;
+        .logoFill{
+            fill:$white;
+            transition: .5s;
+        }
+    }
+    &:not(:hover){
+        .logofill{
+        transition: .5s;
+        }
     }
 }
 
@@ -132,16 +139,12 @@ nav li{
     flex-direction: column;
     width: 92.5%;
     margin: rem(10) auto 0 auto;
-    background-color: #dfdfdf;
+    background-color: $bg-3;
     border-radius: rem(4);
 }
 
-.intro{
-    width: 85%;
-    margin: 0 auto;
-}
-
 .profile-pic{
+    margin-top: auto;
     width:100%;
 }
 

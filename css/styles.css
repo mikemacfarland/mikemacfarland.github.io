@@ -8,7 +8,7 @@
 body {
   min-height: 100vh;
   min-width: 100%;
-  background-image: -webkit-linear-gradient(-80deg, #bdbdbd 50%, #0587b3ea 50.25%);
+  background-image: -webkit-linear-gradient(-80deg, #bdbdbd 40%, #0587b3ea 40.25%);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -20,23 +20,20 @@ body {
 
 h1 {
   font-family: "Big Shoulders Inline Display", cursive;
-  font-size: 2.75rem;
+  font-size: 3rem;
   color: #0587b3ea;
   padding: 0.9375rem 0;
 }
 
 h3 {
   width: 95%;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   margin: 3.5% auto 3% auto;
 }
 
-p {
-  font-size: 0.85rem;
-}
-
+p,
 a {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 footer {
@@ -47,14 +44,6 @@ footer {
 
 .flex {
   display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.row {
-  flex-direction: row;
 }
 
 header {
@@ -69,11 +58,10 @@ ul {
 
 nav li {
   font-weight: bold;
-  margin-bottom: 0.3125rem;
   padding: 0.625rem 0;
   background-color: #dfdfdf;
   width: 100%;
-  margin: 0 auto 0.625rem auto;
+  margin: 0.625rem 0;
   cursor: pointer;
   border-radius: 0.234375rem;
 }
@@ -91,10 +79,6 @@ nav li:not(:hover) {
   display: none;
 }
 
-.portfolio {
-  padding-bottom: 0.9375rem;
-}
-
 .portfolio ul {
   width: 85%;
   margin: 0.3125rem 5% 0 10%;
@@ -108,7 +92,7 @@ nav li:not(:hover) {
 }
 
 .projectCard {
-  margin-top: 1.5625rem;
+  margin: 0.625rem 0;
 }
 
 .projectLink {
@@ -127,14 +111,7 @@ nav li:not(:hover) {
   transition: 0.5s;
 }
 
-.contact ul {
-  flex-direction: row;
-  margin: 0.625rem 27.5%;
-  justify-content: space-between;
-}
-
 .email {
-  margin-top: 0.3125rem;
   text-decoration: none;
   color: black;
 }
@@ -146,17 +123,39 @@ nav li:not(:hover) {
   transition: 0.75s;
 }
 
-.contact div {
+.contact {
+  font-weight: bold;
+}
+
+.containerInfo {
+  font-weight: bold;
   justify-content: center;
+}
+.containerInfo a, .containerInfo p {
+  margin: 0.625rem 0.625rem;
+}
+.containerInfo div {
+  justify-content: center;
+}
+
+.outerCircle {
+  fill: #0587b3ea;
+}
+
+.logoFill {
+  fill: #dfdfdf;
 }
 
 .social {
   width: 3.125rem;
   cursor: pointer;
-  margin: 0.3125rem 0.625rem;
 }
-.social:hover {
-  fill: #bdbdbd;
+.social:hover .logoFill {
+  fill: #ffff;
+  transition: 0.5s;
+}
+.social:not(:hover) .logofill {
+  transition: 0.5s;
 }
 
 .container {
@@ -167,12 +166,8 @@ nav li:not(:hover) {
   border-radius: 0.25rem;
 }
 
-.intro {
-  width: 85%;
-  margin: 0 auto;
-}
-
 .profile-pic {
+  margin-top: auto;
   width: 100%;
 }
 
@@ -180,6 +175,89 @@ footer {
   text-align: center;
   margin: 0.3125rem auto;
   width: 50%;
+}
+
+@media (min-width: 480px) {
+  nav li {
+    font-size: 1.25rem;
+  }
+
+  .portfolio ul {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  .containerInfo p,
+.containerInfo a {
+    font-size: 1.2rem;
+  }
+
+  .social {
+    width: 4.0625rem;
+  }
+}
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav li {
+    width: 32%;
+  }
+
+  .home,
+.contact {
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  .containerInfo {
+    width: 50%;
+    margin: 10% auto;
+  }
+
+  .profile-pic {
+    width: 45%;
+  }
+
+  .portfolio {
+    padding-top: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio :first-of-type.projectCard {
+    width: 75%;
+  }
+  .portfolio h1 {
+    width: 100%;
+  }
+
+  .projectCard {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 1.95rem;
+  }
+
+  .containerInfo p,
+.containerInfo a {
+    font-size: 1.3rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
