@@ -85,7 +85,7 @@ nav li{
 // CONTACT TAB
 // -----------------
 
-.email{
+.aLink{
     text-decoration: none;
     color: black;
     &:hover{
@@ -97,6 +97,11 @@ nav li{
     }
 }
 
+.open{
+    width: rem(16);
+    }
+
+
 .contact{
     font-weight: bold;
 }
@@ -105,7 +110,7 @@ nav li{
     font-weight: bold;
     justify-content: center;
     & a,p{
-        margin: rem(10) rem(10);
+        margin: rem(20) rem(10);
     }
     & div{
         justify-content: center;
